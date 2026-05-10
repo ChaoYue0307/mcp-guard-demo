@@ -8,16 +8,18 @@ The main branch contains a safe `.mcp.json` config. The demo pull request change
 
 - Workflow: `.github/workflows/mcp-guard.yml`
 - Safe config on `main`: `.mcp.json`
+- Intentional failing demo PR: https://github.com/ChaoYue0307/mcp-guard-demo/pull/1
 - Marketplace Action: https://github.com/marketplace/actions/mcp-guard-mcp-security-scanner
 - Product site and transparent example: https://chaoyue0307.github.io/mcp-guard/e2e/
 
 ## Workflow
 
 ```yaml
-- uses: ChaoYue0307/mcp-guard-action@v0.3.1
+- uses: ChaoYue0307/mcp-guard-action@v0.4.0
   with:
     config: .mcp.json
     fail-on: high
+    comment-pr: "true"
     upload-sarif: "true"
 ```
 
