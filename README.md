@@ -2,7 +2,7 @@
 
 This repository demonstrates `mcp-guard` as a GitHub Action on a real pull request.
 
-The main branch contains a safe `.mcp.json` config. The demo pull request changes that config to risky MCP server entries so `mcp-guard` can block the change and generate Markdown, HTML, JSON, and SARIF reports.
+The main branch contains a safe `.mcp.json` config. The demo pull request changes that config to risky MCP server entries so `mcp-guard` can block the change and generate a full audit pack: executive summary, remediation plan, Markdown, HTML, JSON, SARIF, and manifest reports.
 
 This repository also commits `.mcp-guard-policy.json` so the demo shows both built-in MCP risk rules and team policy enforcement.
 
@@ -18,7 +18,7 @@ This repository also commits `.mcp-guard-policy.json` so the demo shows both bui
 ## Workflow
 
 ```yaml
-- uses: ChaoYue0307/mcp-guard-action@v0.4.4
+- uses: ChaoYue0307/mcp-guard-action@v0.4.5
   with:
     config: .mcp.json
     fail-on: high
