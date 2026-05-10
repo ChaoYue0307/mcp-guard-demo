@@ -18,7 +18,7 @@ This repository also commits `.mcp-guard-policy.json` so the demo shows both bui
 ## Workflow
 
 ```yaml
-- uses: ChaoYue0307/mcp-guard-action@v0.4.8
+- uses: ChaoYue0307/mcp-guard-action@v0.4.9
   with:
     config: .mcp.json
     fail-on: high
