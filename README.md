@@ -15,7 +15,7 @@ The main branch contains a safe `.mcp.json` config. The demo pull request change
 ## Workflow
 
 ```yaml
-- uses: ChaoYue0307/mcp-guard-action@v0.4.3
+- uses: ChaoYue0307/mcp-guard-action@v0.4.4
   with:
     config: .mcp.json
     fail-on: high
