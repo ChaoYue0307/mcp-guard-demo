@@ -1,0 +1,22 @@
+name: mcp-guard
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ChaoYue0307/mcp-guard-action@v0.3.1
+        with:
+          config: .mcp.json
+          fail-on: high
+          upload-sarif: "true"

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "local-docs": {
+      "command": "node",
+      "args": [
+        "./tools/read-only-docs-server.js"
+      ],
+      "cwd": "./workspace/docs"
+    }
+  }
+}
